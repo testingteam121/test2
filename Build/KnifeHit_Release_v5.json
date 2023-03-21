@@ -1,0 +1,12 @@
+{
+"companyName": "IndiaTodayGames",
+"productName": "Sword Hit",
+"dataUrl": "KnifeHit_Release_v5.data.unityweb",
+"wasmCodeUrl": "KnifeHit_Release_v5.wasm.code.unityweb",
+"wasmFrameworkUrl": "KnifeHit_Release_v5.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
