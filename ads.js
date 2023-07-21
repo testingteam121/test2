@@ -239,7 +239,7 @@ function runOnAdClosed() {
             gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed')
 
         } else {
-            //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess')
+            gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess')
 
             // call game function for earned reward  (success case)
         }
