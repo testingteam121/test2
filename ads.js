@@ -239,7 +239,7 @@ function runOnAdClosed() {
             gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed')
 
         } else {
-            //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess')
+            gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess')
 
             // call game function for earned reward  (success case)
         }
@@ -310,10 +310,10 @@ function endEvent(score, highscore) {
 function rewardEvent() {
     sendCustomAnalyticsEvent('rewarded_ad', {
         successCb:
-            gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess'),
+            //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess'),
 
         failCb:
-            gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed'),
+            //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed'),
 
     })
 
