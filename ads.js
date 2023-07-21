@@ -309,10 +309,10 @@ function endEvent(score, highscore) {
 
 function rewardEvent() {
     sendCustomAnalyticsEvent('rewarded_ad', {
-        successCb:,
+        //successCb:,
             //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnSuccess', 'JavascriptToUnityOnSuccess'),
 
-        failCb:
+        //failCb:
             //gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed'),
 
     })
