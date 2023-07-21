@@ -24,6 +24,14 @@
     <script>UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });</script>
     <script type="text/javascript" src="./ads.js"></script>
+     <script>
+        var canvas = document.getElementById("canvas");
+        canvas.addEventListener("mousedown", onMouseDown, false);
+
+        function onMouseDown(event) {
+            window.focus();
+        }
+    </script>
 </head>
 <body>
     <div class="webgl-content">
