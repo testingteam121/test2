@@ -113,7 +113,7 @@ function bannerCallbacks(obj) {
 
     obj.adInstance?.registerCallback('onAdLoadSucceed', (data) => {
         console.log('onAdLoadSucceeded CALLBACK', data);
-
+      window.focus();
         if (obj.adUnitName === LBBannerObj.adUnitName) {
             $("#div-gpt-ad-1").css("display", "flex")
             $(".gameOverDiv").css("margin-top", "0px");
@@ -128,7 +128,7 @@ function bannerCallbacks(obj) {
 
     obj.adInstance?.registerCallback('onAdLoadFailed', (data) => {
         console.log('onAdLoadFailed  CALLBACK', data);
-
+window.focus();
 
         if (obj.adUnitName === LBBannerObj.adUnitName) {
             $("#div-gpt-ad-1").css("display", "none")
@@ -138,7 +138,9 @@ function bannerCallbacks(obj) {
     });
 
     obj.adInstance?.registerCallback('onAdDisplayed', (data) => {
+  
         console.log('onAdDisplayed  CALLBACK', data);
+              window.focus();
     });
 }
 
