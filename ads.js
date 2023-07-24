@@ -353,22 +353,22 @@ function showGame() {
 
 
 
-window.pauseEvent = function () {
+window.pauseEvent = function() {
     console.log("Pausing The Game.....");
     gameInstance.SendMessage('LevelManager', 'PauseGame', 'paused');
 }
 
-window.resumeEvent = function () {
+window.resumeEvent = function() {
     console.log("Resumeing The Game.....");
     gameInstance.SendMessage('LevelManager', 'ResumeGame', 'resume');
 }
 
-window.replayGameEvent = function () {
+window.replayGameEvent = function() {
     console.log("Replaying The Game.....");
     gameInstance.SendMessage('LevelManager', 'ReplayGame', 'replay');
 }
 
-window.gotoHomeEvent = function () {
+window.gotoHomeEvent = function() {
     console.log("Going to home The Game.....");
     gameInstance.SendMessage('LevelManager', 'Gotohome', 'home');
 }
@@ -379,12 +379,4 @@ window.enableSound = function(isenabled) {
         gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
     else
         gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
-}
-
-function alertMessages() {
-    alert("alertMessages");
-}
-
-function bsdk(message) {
-    alert(message);
 }
