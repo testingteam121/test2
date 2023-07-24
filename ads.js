@@ -266,7 +266,6 @@ function runAfterLoad() {
 
     replayInstance = window.GlanceGamingAdInterface.loadRewardedAd(replayObj, rewardedCallbacks);
     rewardInstance = window.GlanceGamingAdInterface.loadRewardedAd(rewardObj, rewardedCallbacks);
-  window.focus();
 }
 
 
@@ -349,8 +348,6 @@ function showGame() {
         $("#div-gpt-ad-1").html("");
         
     }
-
-      window.focus();
 }
 
 
