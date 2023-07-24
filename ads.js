@@ -266,6 +266,8 @@ function runAfterLoad() {
 
     replayInstance = window.GlanceGamingAdInterface.loadRewardedAd(replayObj, rewardedCallbacks);
     rewardInstance = window.GlanceGamingAdInterface.loadRewardedAd(rewardObj, rewardedCallbacks);
+    gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
+
 }
 
 
