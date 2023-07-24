@@ -24,9 +24,7 @@
     <script>UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });
    
-    window.addEventListener('focus',function(){
-    refreshStickyBannerAd();
-    });
+   
     </script>
     <script type="text/javascript" src="./ads.js"></script>
 </head>
@@ -34,9 +32,7 @@
     <div class="webgl-content">
         <div id="gameContainer" style="width: 960px; height: 600px"></div>
     </div>
-    <script>
-    window.onload = function() { window.focus(); }
-    </script>
+   
     <script src="TemplateData/responsive.javascript"></script>
 </body>
 </html>
