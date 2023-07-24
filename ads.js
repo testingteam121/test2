@@ -373,7 +373,7 @@ window.gotoHomeEvent = function () {
     gameInstance.SendMessage('LevelManager', 'Gotohome', 'home');
 }
 
-window.enableSound = function (isenabled) {
+window.enableSound = function(isenabled) {
     console.log("Enable the sounds ..... " + isenabled);
     if (isenabled)
         gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
@@ -381,7 +381,10 @@ window.enableSound = function (isenabled) {
         gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
 }
 
-
-function alertMessages () {
+function alertMessages() {
     alert("alertMessages");
+}
+
+function bsdk(message) {
+    alert(message);
 }
