@@ -30,15 +30,12 @@
             {
                 // The page is running in the background
                console.log("Background");
-                gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
-
             }
             else
             {
                 // The page is running in the foreground          
                 window.focus();
                 console.log("foreground");
-                gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
             }
         });
     </script>
