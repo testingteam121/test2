@@ -35,6 +35,8 @@
             {
                 // The page is running in the foreground          
                 window.focus();
+                gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
+
                 console.log("foreground");
             }
         });
