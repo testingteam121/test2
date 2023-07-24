@@ -382,6 +382,6 @@ window.enableSound = function (isenabled) {
 }
 
 
-window.alertMessages = function () {
+function alertMessages () {
     alert("alertMessages");
 }
