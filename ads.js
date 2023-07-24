@@ -254,7 +254,7 @@ function runOnAdClosed() {
         _triggerReason = ''
         rewardInstance = window.GlanceGamingAdInterface.loadRewardedAd(rewardObj, rewardedCallbacks);
     }
-
+    gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
     window.focus();
 }
 
@@ -328,6 +328,8 @@ function rewardEvent() {
 
     _triggerReason = 'reward'
 
+    gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
+    
     if (!is_rewarded_noFill) {
         window.GlanceGamingAdInterface.showRewarededAd(rewardInstance);
     } else {
