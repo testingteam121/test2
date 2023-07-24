@@ -242,7 +242,7 @@ function runOnAdClosed() {
 
     } else if (_triggerReason === 'reward') {
 
-         If user close ad before reward
+         //If user close ad before reward
         if (!isRewardGranted && isRewardedAdClosedByUser) {
             // call game function for not earning reward (failure case)
             gameInstance.SendMessage('LevelManager', 'JavascriptToUnityOnFailed', 'JavascriptToUnityOnFailed')
