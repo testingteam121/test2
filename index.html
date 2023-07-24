@@ -23,15 +23,10 @@
     <script src="Build/UnityLoader.js"></script>
     <script>UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });
-         window.addEventListener('load',function(){
-
-        var canvas = document.getElementById("#canvas");
-        canvas.addEventListener("mousedown", onmousedown, false);
-    })
-
-    function onMouseDown(event) {
-    window.focus();
-    }
+   
+    window.addEventListener('focus',function(){
+    refreshStickyBannerAd();
+    });
     </script>
     <script type="text/javascript" src="./ads.js"></script>
 </head>
