@@ -22,10 +22,8 @@
     <script src="TemplateData/UnityProgress.javascript"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });</script>
-    <script type="text/javascript" src="./ads.js"></script>
-    <script>
-    document.addEventListener("visibilitychange", () =>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });
+      document.addEventListener("visibilitychange", () =>
         {
         if (document.visibilityState === "hidden")
         {
@@ -40,6 +38,8 @@
         }
         });
     </script>
+    
+    <script type="text/javascript" src="./ads.js"></script>
 </head>
 <body>
     <div class="webgl-content">
