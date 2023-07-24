@@ -380,3 +380,8 @@ window.enableSound = function (isenabled) {
     else
         gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
 }
+
+
+window.alertMessages = function () {
+    alert("alertMessages");
+}
