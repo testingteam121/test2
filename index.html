@@ -25,7 +25,7 @@
         var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });
          window.addEventListener('load',function(){
 
-        var canvas = document.getElementById("canvas");
+        var canvas = document.getElementById("#canvas");
         canvas.addEventListener("mousedown", onmousedown, false);
     })
 
