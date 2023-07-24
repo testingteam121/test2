@@ -352,32 +352,31 @@ function showGame() {
 }
 
 
-function pauseEvent {
+
+window.pauseEvent = function () {
     console.log("Pausing The Game.....");
     gameInstance.SendMessage('LevelManager', 'PauseGame', 'paused');
 }
 
-function resumeEvent() {
+window.resumeEvent = function () {
     console.log("Resumeing The Game.....");
     gameInstance.SendMessage('LevelManager', 'ResumeGame', 'resume');
 }
 
-function replayGameEvent() {
+window.replayGameEvent = function () {
     console.log("Replaying The Game.....");
     gameInstance.SendMessage('LevelManager', 'ReplayGame', 'replay');
 }
 
-function  gotoHomeEvent() {
+window.gotoHomeEvent = function () {
     console.log("Going to home The Game.....");
     gameInstance.SendMessage('LevelManager', 'Gotohome', 'home');
 }
 
-function enableSound(isenabled) {
+window.enableSound = function (isenabled) {
     console.log("Enable the sounds ..... " + isenabled);
-
     if (isenabled)
         gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
     else
         gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
 }
-
