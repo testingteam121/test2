@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+
+
+    <!-- <script type="text/javascrxipt" src="./loadingPage.js"></script>
+    <link rel="stylesheet" href="./loadingPage.css"> -->
+
+    <script type="text/javascript" src="./stickyBanner.js"></script>
+    <link rel="stylesheet" href="./stickyBanner.css">
+
+    <!-- <script type="text/javascript" src="./leaderboard.js"></script>
+    <link rel="stylesheet" href="./leaderboard.css">-->
+
+    <title>TappyBird</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.javascript"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>UnityLoader.compatibilityCheck = function (e, t, r) { t(); };
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TestBuild.json", { onProgress: UnityProgress });</script>
+        document.addEventListener("visibilitychange", () =>
+        {
+        if (document.visibilityState === "hidden")
+        {
+        // The page is running in the background
+        console.log("Background");
+        }
+        else
+        {
+        // The page is running in the foreground
+        window.focus();
+        console.log("foreground");
+        }
+        });
+    <script type="text/javascript" src="./ads.js"></script>
+</head>
+<body>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+    </div>
+    <script src="TemplateData/responsive.javascript"></script>
+</body>
+</html>
