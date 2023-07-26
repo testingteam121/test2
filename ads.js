@@ -315,7 +315,7 @@ function endEvent(score, highscore) {
         highScore: highscore
     })
 
-    gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
+    //gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
 }
 
 function rewardEvent() {
