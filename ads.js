@@ -255,7 +255,7 @@ function runOnAdClosed() {
         rewardInstance = window.GlanceGamingAdInterface.loadRewardedAd(rewardObj, rewardedCallbacks);
     }
 
-    gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
+    //gameInstance.SendMessage('SoundManager', 'AudioOn', 'on');
     window.focus();
 }
 
@@ -328,7 +328,7 @@ function rewardEvent() {
 
     })
 
-    gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
+    //gameInstance.SendMessage('SoundManager', 'AudioOff', 'off');
 
     _triggerReason = 'reward'
 
