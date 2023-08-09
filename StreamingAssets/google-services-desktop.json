@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "619202251834",
+    "project_id": "recuehero",
+    "storage_bucket": "recuehero.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619202251834:android:1a109e197ad81de5dff903",
+        "android_client_info": {
+          "package_name": "com.tvtodaynetwork.recuepin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619202251834-u8b4scsc6302u55k0895neqqbkafg9dk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXivBe2zooCh80UXNXCjhTSOQ1UiOeQVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619202251834-u8b4scsc6302u55k0895neqqbkafg9dk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "619202251834-h87nb34j4l8alnkfrfhfmpkm4gbhb5vo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tvtodaynetwork.recuepin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

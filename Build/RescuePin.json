@@ -1,0 +1,17 @@
+{
+"companyName": "TV Today",
+"productName": "Rescue Pin",
+"productVersion": "1.7",
+"dataUrl": "RescuePin.data.unityweb",
+"wasmCodeUrl": "RescuePin.wasm.code.unityweb",
+"wasmFrameworkUrl": "RescuePin.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "RescuePin.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.38f1"
+}
